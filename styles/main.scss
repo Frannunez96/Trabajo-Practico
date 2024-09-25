@@ -1,0 +1,136 @@
+$primary:#00c800 ;
+$secondary : #000000;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Variables de colores personalizados
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+;
+
+// Estilo General
+body {
+    color: $dark-color;
+    font-family: Arial, sans-serif;
+}
+
+// Navbar
+.navbar {
+    background-color: $light-color;
+    color: $dark-color;
+
+}
+
+.nav-item {
+    &:hover {
+        background-color: $dark-color;
+
+        .nav-link {
+            color: $light-color;
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    background: url('../Static/programa.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+
+.hero p {
+    border: solid 0px #00c800;
+    border-radius: 30px 0 30px 0;
+    background-color: hsla(0, 0%, 0%, 0.563);
+    font-size: 2rem;
+    margin-top: 10px 0;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px 0;
+    color: $primary;
+    font-size: 2rem;
+}
+
+.info-section,
+.experience-section,
+.education-section,
+.skills-section {
+    background-color: $secondary-color;
+    padding: 50px 0;
+}
+
+.list-group-item {
+    background-color: $light-color;
+    border: none;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#colegio {
+    background-image: url('/Trabajo-practico/Static/piox2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#introduccion {
+    background-image: url('/Trabajo-practico/Static/codo2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#desarrollo {
+    background-image: url('/Trabajo-practico/Static/ambox2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;   
+}
+
+
+#card-container {
+    height: 100%;
+}
+
+
+
