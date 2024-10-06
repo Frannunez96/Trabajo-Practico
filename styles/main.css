@@ -11976,6 +11976,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: Qrowy;
+  src: url("/Trabajo-practico/Static/Fonts/QrowyMagical.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Dragon;
+  src: url("/Trabajo-practico/Static/Fonts/DragonHunter.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Sailer;
+  src: url("/Trabajo-practico/Static/Fonts/SailerTrial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: #343a40;
   font-family: Arial, sans-serif;
@@ -12023,8 +12041,16 @@ body {
 .section-title {
   text-align: center;
   margin-bottom: 30px 0;
-  color: #00c800;
+  background-color: #000000;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+  color: white;
   font-size: 2rem;
+  font-family: Sailer, sans-serif;
+}
+
+#habilidades, #IP, #educacion {
+  background-color: rgba(245, 222, 179, 0);
 }
 
 .info-section,
@@ -12088,4 +12114,72 @@ body {
 
 #card-container {
   height: 100%;
+}
+
+#python {
+  background-image: url("/Trabajo-practico/Static/python.avif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+#javascript {
+  background-image: url("/Trabajo-practico/Static/javascript2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+#html {
+  background-image: url("/Trabajo-practico/Static/htmlimage.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+#bootstrap {
+  background-image: url("/Trabajo-practico/Static/bootstrap2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+.card-container .card {
+  margin: 5px;
+}
+
+#skills {
+  background-color: #000000;
+}
+
+#portafolio {
+  font-family: Qrowy, sans-serif;
+}
+
+#nombre {
+  font-family: Dragon, sans-serif;
+}
+
+#desarrollador {
+  font-family: Sailer, sans-serif;
 }/*# sourceMappingURL=main.css.map */

@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto CV</title>
+    <title>Trabajo Practico</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--NavBar-->
     <nav
       id="navbar"
-      class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm"
+      class="navbar navbar-expand-md fixed-top shadow-sm bg-dark border-bottom border-body" data-bs-theme="dark"
     >
       <div class="container-fluid">
         <!-- Boton Collapse-->
-        <a href="#" class="navbar-brand">Mi CV</a>
+        <a href="#" class="navbar-brand" id="portafolio">
+          <img src="/Trabajo-practico/Static/codigo.png" width="30" height="25" class="d-inline-block align-text-top" alt="codigo">
+        Portafolio Personal
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,18 +53,18 @@
     </nav>
     <!--Hero Section-->
     <section id="hero" class="hero">
-      <h1>Franco Nuñez</h1>
-      <p>Desarrolador Full Stack | Maquetador Web</p>
+      <h1 id="nombre">Franco Nunez</h1>
+      <p id="desarrollador">Desarrolador Web Full Stack | Maquetador Web</p>
     </section>
     <!--Informacion Personal-->
     <section id="info" class="info-section bg-dark">
       <div class="container">
-        <h2 class="section-title">Informacion Personal</h2>
+        <h2 class="section-title" id="IP">Informacion Personal</h2>
         <div class="row">
           <!--Foto Perfil-->
           <div class="col-md-4 d-flex justify-content-center mb-3">
             <img
-              src="https://placehold.co/200x200"
+              src="/Trabajo-practico/Static/perfil.jpeg" height="200" width="250"
               alt="Foto de Perfil"
               class="img-fluid rounded-circle"
             />
@@ -129,7 +135,7 @@
     <!--Educacion-->
     <section id="education" class="education-section bg-dark">
       <div class="container">
-        <h2 class="section-title">Educación</h2>
+        <h2 class="section-title" id="educacion">Educación</h2>
         
       </div>
       <div class="container" id="card-container">
@@ -166,26 +172,14 @@
     <!--Habilidades-->
     <section id="skills" class="skills-section">
       <div class="container">
-        <h2 class="section-title">Habilidades</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                JavaScript
-                <img
-                  src="https://img.icons8.com/?size=100&id=39853&format=png&color=000000"
-                  alt=""
-                />
-              </li>
-              <li class="list-group-item">Python</li>
-              <li class="list-group-item"></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">HTML/CSS</li>
-              <li class="list-group-item">MongoDB</li>
-              <li class="list-group-item">Bootstrap</li>
+        <h2 class="section-title" id="habilidades">Habilidades</h2>
+        <div class="card-container" id="card-container">
+          <div class="row justify-content-center">
+          
+              <div class="card col-md-2 rounded-circle" id="javascript"></div>
+              <div class="card col-md-2 rounded-circle" id="python"></div>
+              <div class="card col-md-2 rounded-circle" id="html"></div>
+              <div class="card col-md-2 rounded-circle" id="bootstrap"></div>
             </ul>
           </div>
         </div>
